@@ -2,7 +2,7 @@
     //Mulai Sesion
     session_start();
     if (isset($_SESSION["ses_username"])==""){
-	header("location: login");
+	header("location: login.php");
     
     }else{
       $data_id = $_SESSION["ses_id"];
@@ -58,7 +58,7 @@
 					</a>
 				</li>
 				<li class="nav-item d-none d-sm-inline-block">
-					<a href="http://localhost/kas_masjid/" class="nav-link">Home</a>
+					<a href="index.php" class="nav-link">Home</a>
 				</li>
 				<li class="nav-item d-none d-sm-inline-block">
 					<a href="?page=rekap_km" class="nav-link">Rekap Kas Masjid</a>
@@ -88,7 +88,7 @@
 		<!-- Main Sidebar Container -->
 		<aside class="main-sidebar sidebar-dark-primary elevation-4">
 			<!-- Brand Logo -->
-			<a href="http://localhost/kas_masjid/" class="brand-link">
+			<a href="index.php" class="brand-link">
 				<img src="dist/img/masjid.jpeg" alt="AdminLTE Logo" class="brand-image" style="opacity: .8">
 				<span class="brand-text font-weight-light"> Masjid Nurul Iman</span>
 			</a>
